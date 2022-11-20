@@ -20,8 +20,8 @@
 
 <body class="page">
     <div class="content" style="max-width:1400px">
-        <header class="container center padding-32">
-            <h1><b>CRYDEN'S PORTFOLIO</b></h1>
+        <header class="container header">
+            <h1><b>CRYDEN'S CORNER</b></h1>
             <p>Welcome to the portfolio of <span class="tag">Connor Rideout</span></p>
         </header>
 
@@ -29,20 +29,67 @@
             <div class="col-left">
                 <!-- ENTRY -->
                 <div class="card margin color">
+                    <div class="img-bg" style='background-image: url("./vid_conv.jpg")'>
+                        <div class="img-blur">
+                            <img class="img-center" src="./vid_conv.jpg">
+                        </div>
+                    </div>
+
                     <div class="container">
-                        <h3><b>TITLE HEADING</b></h3>
-                        <h5>Title description, <span class="opacity">Other information</span></h5>
+                        <h3><b>VIDEO CONVERTER</b></h3>
+                        <h5>Command-line builder, <span class="opacity">Convert videos to HEVC-AAC</span></h5>
                     </div>
                     <div class="container">
-                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
-                            euismod placerat.
-                            Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-                            congue ullam corper.
-                            Praesent tincidunt sed
-                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
-                            diam non fringilla.</p>
+                        <p>This program builds a command-line command for FFmpeg to convert videos to a preferred
+                            format. There are a lot of options I've built into the program over time, including the
+                            output video container, as well as support for shorter video types. It either outputs to
+                            .mp4, .mkv, or .webm, depending on user input. The intention was to create a simple way for
+                            video editors/collectors to convert single files or entire folders of video to the smallest
+                            possible size, while retaining the greatest possible quality. I've put it through many
+                            iterations to improve upon all aspects, including ease of use, integration for use with
+                            shell menus, automatic cropping of black space (still buggy), etc. I still am working to
+                            improve this program as I get more test cases that have errors, and am quite happy with it!
+                        </p>
                         <div class="row">
-                            <p><button class="btn"><b>VIEW ON GITHUB »</b></button></p>
+                            <p><button class="btn"
+                                    onclick="window.location.href='https://github.com/Cryden13/SystemScripts/blob/master/src/convertVideo.py'">
+                                    <b>VIEW ON GITHUB »</b>
+                                </button></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- ENTRY -->
+                <div class="card margin color">
+                    <div class="img-bg" style='background-image: url("./spotify_player.jpg")'>
+                        <div class="img-blur">
+                            <img class="img-center" src="./spotify_player.jpg">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <h3><b>SPOTIFY PLAYER</b></h3>
+                        <h5>Tkinter GUI, <span class="opacity">Mini-player on taskbar</span></h5>
+                    </div>
+                    <div class="container">
+                        <p>Ever want a super simple Spotify controller that sits on the taskbar? Look no further! By
+                            creating a Spotify instance using PyWinAuto, this program is able to control the main
+                            Spotify window without it being visible. It does this by sending the appropriate keyboard
+                            shortcuts to the window while it is in a hidden state. The GUI includes buttons for
+                            previous- and next-track, pause/play, and even allows you to control volume by scrolling
+                            over the GUI. The track name and artist are also visible, and if they are too long, the
+                            scroll in a marquee. The program knows the currently playing track by reading the Spotify
+                            window title. Overall, this program is able to interact with Spotify without changing or
+                            interferring with default playback. Additionally, and optionally, included is an AutoHotkey
+                            script that will change the taskbar shortcut for Spotify from the python file to Spotify's
+                            executable and back automatically for ease of use.
+                        </p>
+                        <div class="row">
+                            <p><button class="btn"
+                                    onclick="window.location.href='https://github.com/Cryden13/SpotifyPlayer'">
+                                    <b>VIEW ON GITHUB »</b>
+                                </button></p>
                         </div>
                     </div>
                 </div>
@@ -51,19 +98,23 @@
                 <!-- ENTRY -->
                 <div class="card margin color">
                     <div class="container">
-                        <h3><b>TITLE HEADING</b></h3>
-                        <h5>Title description, <span class="opacity">Other information</span></h5>
+                        <h3><b>SCROLLED FRAME</b></h3>
+                        <h5>Tkinter widget, <span class="opacity">Full customizable scrolling frame</span></h5>
                     </div>
                     <div class="container">
-                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
-                            euismod placerat.
-                            Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-                            congue ullam corper.
-                            Praesent tincidunt sed
-                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
-                            diam non fringilla.</p>
+                        <p>A Tkinter widget that behaves like a tkFrame widget with scrollbars. The scrollbars can be on
+                            any 2 edges of the widget, and (optionally) can automatically hide when not needed.
+                            Configuration options and geometry methods are redirected to the appropriate level widget
+                            within the main widget. All tkFrame widget keyword arguments are accepted, along with some
+                            custom options including padding, automatic updating, and scroll-speed. All internal widgets
+                            are saved as attributes for ease of access. This was my first foray into creating custom
+                            tkinter widgets, and I believe it came out quite nicely.
+                        </p>
                         <div class="row">
-                            <p><button class="btn"><b>VIEW ON GITHUB »</b></button></p>
+                            <p><button class="btn"
+                                    onclick="window.location.href='https://github.com/Cryden13/ScrolledFrame'">
+                                    <b>VIEW ON GITHUB »</b>
+                                </button></p>
                         </div>
                     </div>
                 </div>
@@ -71,20 +122,28 @@
 
                 <!-- ENTRY -->
                 <div class="card margin color">
+                    <div class="img-bg" style='background-image: url("./emotion_wheel.png")'>
+                        <div class="img-blur">
+                            <img class="img-center" src="./emotion_wheel.png">
+                        </div>
+                    </div>
+
                     <div class="container">
-                        <h3><b>TITLE HEADING</b></h3>
-                        <h5>Title description, <span class="opacity">Other information</span></h5>
+                        <h3><b>CIRCULAR DATA TREE</b></h3>
+                        <h5>Tkinter data tree visualizer, <span class="opacity">Emotion wheel</span></h5>
                     </div>
                     <div class="container">
-                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
-                            euismod placerat.
-                            Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-                            congue ullam corper.
-                            Praesent tincidunt sed
-                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
-                            diam non fringilla.</p>
+                        <p>An experimental app that creates an interesting data tree consisting of 3 concentric circles.
+                            The data within can be saved, loaded, and edited by using a basic tkinter UI. The data is
+                            saved using json. Only 3 layers are supported at the moment, but I plan to change this to
+                            allow an indefinite number of layers. On the technical side, the chart itself is drawn using
+                            matplotlib's pyplot, along with some hackery to ensure the circles are properly drawn.
+                        </p>
                         <div class="row">
-                            <p><button class="btn"><b>VIEW ON GITHUB »</b></button></p>
+                            <p><button class="btn"
+                                    onclick="window.location.href='https://github.com/Cryden13/CircularDataTree'">
+                                    <b>VIEW ON GITHUB »</b>
+                                </button></p>
                         </div>
                     </div>
                 </div>
@@ -92,65 +151,35 @@
 
                 <!-- ENTRY -->
                 <div class="card margin color">
+                    <div class="img-bg" style='background-image: url("./gamebrowser.jpg")'>
+                        <div class="img-blur">
+                            <img class="img-center" src="./gamebrowser.jpg">
+                        </div>
+                    </div>
+
                     <div class="container">
-                        <h3><b>TITLE HEADING</b></h3>
-                        <h5>Title description, <span class="opacity">Other information</span></h5>
+                        <h3><b>GAME BROWSER</b></h3>
+                        <h5>Robust PyQt5 GUI, <span class="opacity">Manage any amount of games</span></h5>
                     </div>
                     <div class="container">
-                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
-                            euismod placerat.
-                            Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-                            congue ullam corper.
-                            Praesent tincidunt sed
-                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
-                            diam non fringilla.</p>
+                        <p>A commissioned project, this program took me the most time and effort, along with the most
+                            iterations to get where I wanted it. The basic idea grew in scope until it hit the point
+                            where it currently sits. The GUI allows you to view, edit, add, remove, and overall manage
+                            any number of games from any number of sources. Almost all the settings are changeable by
+                            the user to ensure the best UX possible. The browser's main purpose is to allow someone to
+                            search for games using tags. It also helps make it obvious what is and isn't a favorite, or
+                            if a game has been discontinued. It can also pull data from a site on it's own, but only if
+                            the advanced options are properly inputted. I love this big ol' program and will continue to
+                            push updates as I find better ways to do things.</p>
                         <div class="row">
-                            <p><button class="btn"><b>VIEW ON GITHUB »</b></button></p>
+                            <p><button class="btn"
+                                    onclick="window.location.href='https://github.com/Cryden13/GameBrowser'">
+                                    <b>VIEW ON GITHUB »</b>
+                                </button></p>
                         </div>
                     </div>
                 </div>
                 <hr>
-
-                <!-- ENTRY -->
-                <div class="card margin color">
-                    <div class="container">
-                        <h3><b>TITLE HEADING</b></h3>
-                        <h5>Title description, <span class="opacity">Other information</span></h5>
-                    </div>
-                    <div class="container">
-                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
-                            euismod placerat.
-                            Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-                            congue ullam corper.
-                            Praesent tincidunt sed
-                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
-                            diam non fringilla.</p>
-                        <div class="row">
-                            <p><button class="btn"><b>VIEW ON GITHUB »</b></button></p>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-
-                <!-- ENTRY -->
-                <div class="card margin color">
-                    <div class="container">
-                        <h3><b>TITLE HEADING</b></h3>
-                        <h5>Title description, <span class="opacity">Other information</span></h5>
-                    </div>
-                    <div class="container">
-                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
-                            euismod placerat.
-                            Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-                            congue ullam corper.
-                            Praesent tincidunt sed
-                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
-                            diam non fringilla.</p>
-                        <div class="row">
-                            <p><button class="btn"><b>VIEW ON GITHUB »</b></button></p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <!-- INTRODUCTION -->
@@ -159,8 +188,11 @@
                     <img src="./profile.png" style="width:100%">
                     <div class="container color">
                         <h4><b>About Me</b></h4>
-                        <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a
-                            interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                        <p>I'm a junior Python developer currently creating quality of life improvements to basic tasks
+                            I run into on PC. I made this blog to highlight the best-of-the-best programs/apps I've made
+                            over the 4 years I've been learning Python. I hope you find something interesting or useful
+                            for yourself or your team! Note that everything is not final and subject to change/update.
+                        </p>
                         <p><button class="btn" onclick="window.location.href='https://github.com/Cryden13'">
                                 <b>MY GITHUB »</b>
                             </button></p>
